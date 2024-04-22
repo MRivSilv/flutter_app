@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:primera_app/domain/entities/message.dart';
+
 
 class MyMessageBubble extends StatelessWidget {
-  const MyMessageBubble({super.key});
+  
+  final Message message;
+  const MyMessageBubble({
+    super.key,
+    required this.message
+  });
   @override
   Widget build(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
